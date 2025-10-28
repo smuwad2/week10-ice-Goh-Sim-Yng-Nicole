@@ -32,20 +32,17 @@
             .catch(error => {
                 this.posts = [{ entry: 'There was an error: ' + error.message }]
             })
-        }
+        },
     }
 </script>
 
 <template>
    <!-- TODO: make use of the 'blog-post' component to display the blog posts -->
-    <div class="d-flex flex-column align-items-center">
-        <BlogPost
-            v-for="(p, index) in posts"
-            :key="index"
-            :subject="p.subject"
-            :entry="p.entry"
-            :mood="p.mood"
-        />
-    </div>
+    <BlogPost v-for="post in posts" 
+        :subject="post.subject"
+        :entry ="post.entry"
+        :mood="post.mood"
+        :key="post.id">
+    </BlogPost>
 </template>
 
