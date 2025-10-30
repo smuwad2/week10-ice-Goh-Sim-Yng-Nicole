@@ -4,13 +4,13 @@
 // import blogPost from './subcomponents/BlogPost.vue'
 	import axios from 'axios'
     export default {
-        components: {
-            BlogPost
-        },
         data() {
             return {
                 posts: [{subject, entry, mood}] // array of post objects
             }  
+        },
+        components: {
+            BlogPost
         },
         computed: {
             baseUrl() {
