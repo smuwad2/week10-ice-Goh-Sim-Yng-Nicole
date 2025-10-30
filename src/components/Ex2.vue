@@ -6,7 +6,7 @@
     export default {
         data() {
             return {
-                posts: [{subject, entry, mood}] // array of post objects
+                posts: [] // array of post objects
             }  
         },
         components: {
