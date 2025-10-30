@@ -11,7 +11,7 @@
         },
         computed: {
             imgLoc() {
-                return `assets/${this.mood.toLowerCase()}.png`;
+                return `/assets/${this.mood.toLowerCase()}.png`;
             }
         }
     }
